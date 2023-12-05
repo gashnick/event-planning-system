@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -24,79 +25,8 @@
 
 	</head>
 	<body>
-		<header id="header">
-			<div id="menu" class="header-menu fixed">
-				<div class="box">
-					<div class="row">
-						<nav role="navigation" class="col-sm-12">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-
-								<!--== Logo ==-->
-								<span class="navbar-brand logo">
-									Evento
-								</span>
-
-							</div>
-							<div class="navbar-collapse collapse">
-
-								<!--== Navigation Menu ==-->
-								<ul class="nav navbar-nav">
-									<li class="current"><a href="#header">Home</a></li>
-									<li><a href="#about">About us</a></li>
-									<li><a href="#schedule">Schedule</a></li>
-									<li><a href="#blog">Blog</a></li>
-									<li><a href="#prices">Pricing</a></li>
-									<li><a href="#team">Our Team</a></li>
-									<li><a href="#testimonial">Testimonials</a></li>
-									<li><a href="#contact">Contact</a></li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-
-			<!--== Site Description ==-->
-			<div class="header-cta">
-				<div class="container">
-					<div class="row">
-						<div class="entry-content">
-				            <p><span class="start-text"><b>From THE MARCH 7, 2014</b></span></p>
-				            <h4 class="entry-title"><a href="#">Organizing World class events</a></h4>
-				            <h5><span><b>Schrodinger confirms that Germany international ...</b></span></h5>
-					    </div>
-					</div>
-				</div>
-			</div>
-
-			<div class="header-bg">
-				<div id="preloader">
-					<div class="preloader"></div>
-				</div>
-				<div class="main-slider" id="main-slider">
-
-					<!--== Main Slider ==-->
-					<ul class="slides">
-						<li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>
-						<li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>
-					</ul>
-
-				</div>
-			</div>
-		</header>
-
-		<div class="content">
-			<div class="container box">
-
-
-				<!--===============================-->
-				<!--== About us ===================-->
+		<!--== Site Description ==-->
+      	<!--== About us ===================-->
 				<!--===============================-->
 		<section id="about" class="about-us">
 			<div class="title-start col-md-4 col-md-offset-4">
@@ -134,9 +64,8 @@
 				<h3>ABOUT US</h3>
 				
 
-				<p>Nullam enim nunc, sollicitudin eget rhoncus non, iaculis quis metus. Nunc urna diam, blandit nec ipsum eu, mollis convallis lectus. Vestibulum sapien mauris, auctor quis magna sed, pretium vestibulum est. Mauris vitae tristique urna. Nullam enim nunc, sollicitudin eget rhoncus non, iaculis quis metus. Nunc urna diam, blandit nec ipsum eu, mollis convallis lectus.
-
-				Vestibulum sapien mauris, auctor quis magna sed, pretium vestibulum est. Mauris vitae tristique urna.</p>
+				<p>Passionate about seamless experiences, we, a dynamic duo of learners, embarked on a journey to simplify event attendance. Our project, Online Ticket Booking, is born from a shared vision to enhance accessibility and joy in every reservation.
+                    Join us in transforming events into unforgettable moments, one ticket at a time.</p>
 			</div>
 			<div class="col-md-4">
 
@@ -181,11 +110,11 @@
 					                <h4>Event One</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi enim, ea soluta fugit doloremque consequuntur iste vero asperiores ad facilis! Dolorem eos minima laborum id autem totam omnis, repudiandae itaque?</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Venue : Camp Kigali
 					                	</em> 
 					                	<em class="timeline-item">
 					                	Seats : 25
@@ -194,7 +123,7 @@
 					                	Ticket: $35 
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+					                	Date : Dec-10-2023
 					                	</em>
 					                	<em class="timeline-item">
 					                	Duration : 5days
@@ -216,11 +145,11 @@
 					                <h4>Event Two</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias harum, omnis maxime aliquam impedit aspernatur provident. Minus error id quasi ullam laborum necessitatibus eaque cum nam natus quibusdam. Sunt?</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Venue : Camp Kigali
 					                	</em> 
 					                	<em class="timeline-item">
 					                	Seats : 25
@@ -229,7 +158,7 @@
 					                	Ticket: $35 
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+					                	Date : Dec-10-2023
 					                	</em>
 					                	<em class="timeline-item">
 					                	Duration : 5days
@@ -251,20 +180,20 @@
 					                <h4>Event Three</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum fuga similique aperiam dolorum nisi corrupti quam atque? Quidem similique tenetur asperiores reprehenderit earum quia reiciendis minus excepturi at incidunt?</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Venue : BK Arena
 					                	</em> 
 					                	<em class="timeline-item">
 					                	Seats : 25
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+					                	Ticket: $25 
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+					                	Date : Dec-15-2023
 					                	</em>
 					                	<em class="timeline-item">
 					                	Duration : 5days
@@ -285,20 +214,20 @@
 					                <h4>Event Four</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus qui adipisci, dolorem praesentium in sint quo minima quaerat dignissimos id quia neque voluptatum, dolore deserunt exercitationem cumque est quasi.</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Venue : Camp Kigali
 					                	</em> 
 					                	<em class="timeline-item">
 					                	Seats : 25
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+					                	Ticket: $5 
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+					                	Date : Dec-10-2023
 					                	</em>
 					                	<em class="timeline-item">
 					                	Duration : 5days
@@ -320,20 +249,20 @@
 					                <h4>Event Five</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores eius incidunt dignissimos quidem sunt inventore assumenda, fugit, quos praesentium corporis aliquam ab veniam autem ut officia, similique quam reiciendis!</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Venue : Kigali
 					                	</em> 
 					                	<em class="timeline-item">
 					                	Seats : 25
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+					                	Ticket: $15 
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+					                	Date : Dec-10-2023
 					                	</em>
 					                	<em class="timeline-item">
 					                	Duration : 5days
@@ -355,20 +284,20 @@
 					                <h4>Event Six</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quos beatae, explicabo cum corporis quae veritatis tempore soluta. Dolore sunt fugit esse voluptatem odio unde repellendus facere ratione earum repudiandae!</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Venue : Kigali
 					                	</em> 
 					                	<em class="timeline-item">
 					                	Seats : 25
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+					                	Ticket: $25 
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+					                	Date : Dec-10-2023
 					                	</em>
 					                	<em class="timeline-item">
 					                	Duration : 5days
@@ -391,40 +320,40 @@
 				<!--== Blog =============-->
 				<!--===============================-->
 			<section id="blog" class="row">
-				<div class="title-start col-md-4 col-md-offset-4"><h2>Blog</h2>	
-				<p class="sub-text text-center">Awesome news and articles from us</p>	
+				<div class="title-start col-md-4 col-md-offset-4"><h2>FEATURED EVENTS</h2>	
+				<p class="sub-text text-center">Book your favorite event here</p>	
 				</div>
 					<div class="top">
 					</div>
 					<div class="content">
 					  
 					  <div class="blog col-md-4">
-					    <h2 class="blog-head">Evento at HW</h2>
+					    <h2 class="blog-head">Event 1</h2>
 					    <h3>
-					    Posted by <a href="#">Shuvo</a><span class="date-line"> on April 1st</span>
+					    Posted by <a href="#">AnnyNick</a><span class="date-line"> on December 1st</span>
 					    </h3>
 					    <img class="blog-image" src="images/demo/blog2.jpg" width="100%" height="250" alt="Blog Image 2"/>
 					    
-					    <p class="firstpara"><span class="firstcharacter">P</span>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> 
+					    <p class="firstpara"><span class="firstcharacter">P</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eveniet consequuntur perspiciatis labore dolores quas, placeat deserunt nulla, accusamus aut recusandae ratione sunt culpa sequi reiciendis natus adipisci cumque corporis.</p> 
 
-					    <button class="button-info read-more">Read More</button>
+					    <button class="button-info read-more">View Details</button>
 					     
 					  </div>
 					
 					  <div class="blog col-md-4">
-					    <h2 class="blog-head">Evento at NY</h2>
-					    <h3>Posted by <a href="#">Shuvo</a><span class="date-line"> on April 30th</span></h3>
+					    <h2 class="blog-head">Event 2</h2>
+					    <h3>Posted by <a href="#">AnnyNick</a><span class="date-line"> on December 2nd</span></h3>
 					    <img class="blog-image" src="images/demo/blog1.jpg"  width="100%" height="250" alt="Blog Image 2"/>
-					    <p class="firstpara"><span class="firstcharacter">G</span>et out of here!" bellowed a brawny man with a beard as long as Charlie's arm. "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante."Pellentesque habitant morbi tristique." said Charlie.Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					    <button class="button-info read-more">Read More</button>
+					    <p class="firstpara"><span class="firstcharacter">G</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi corporis, quos quasi nesciunt exercitationem laboriosam, amet placeat incidunt atque aliquam in quia numquam sunt necessitatibus. Nulla at mollitia cum quae.</p>
+					    <button class="button-info read-more">View Details</button>
 					  </div>
 					  <div class="blog col-md-4">
-					    <h2 class="blog-head">US Feast</h2>
+					    <h2 class="blog-head">Event 3</h2>
 
-					    <h3>Posted by <a href="#">Shuvo</a><span class="date-line"> on April 1st</span></h3>
+					    <h3>Posted by <a href="#">AnnyNick</a><span class="date-line"> on December 4th</span></h3>
 					    <img class="blog-image" src="images/demo/blog2.jpg" width="100%" height="250" alt="Blog Image 2"/>
-					    <p class="firstpara"><span class="firstcharacter">P</span>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					    <button class="button-info read-more">Read More</button>
+					    <p class="firstpara"><span class="firstcharacter">P</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quos quas aperiam perspiciatis optio rem voluptate nobis natus. Illum odit nisi tenetur pariatur beatae veniam labore quia quibusdam nam nemo.</p>
+					    <button class="button-info read-more">View Details</button>
 					  </div>
 					</div>
 				</section>
@@ -540,74 +469,49 @@
 					<div class="container">
 				<div class="title-start team-menu col-md-4 col-md-offset-4">
 					<h2 class="team-heading">Our Team</h2>
-					<p class="sub-text text-center">Meet the greatest Team of Themewagon</p>
+					<p class="sub-text text-center">Meet the greatest Team of AnnyNick</p>
 				</div>
 				</div>
-					<div class="team-member row">
-					<div class="col-md-3 col-sm-6 member">
-						<img class="blog-image" src="images/team1.jpg" width="100%" height="280" alt="Blog Image 2"/>
-						<p class="name-member">Jon Doe, CEO</p>
-					    <ul class="team-ist">
-					     <li>CSS3 </li>	
-					     <li>HTML5 </li>
-					     <li>Adobe</li>	
-					     </ul>
-					    <div class="team-social">
-					    <i class="fa fa-2x fa-tumblr-square"></i>
-					    <i class="fa fa-2x fa-facebook"></i>
-					    <i class="fa fa-2x fa-twitter"></i>
-					    <i class="fa fa-2x fa-linkedin"></i>
-					    </div>
-					</div>
-					<div class="col-md-3 col-sm-6 member">
-						<img class="blog-image" src="images/team2.jpg" width="100%" height="280" alt="Blog Image 2"/>
-					    <p class="name-member">Jon Doe, Head of Ideas</p>
-					    <ul class="team-ist">
-					     <li>CSS3 </li>	
-					     <li>HTML5 </li>
-					     <li>Adobe</li>	
-					     </ul>
-					    <div class="team-social">
-					    <i class="fa fa-2x fa-tumblr-square"></i>
-					    <i class="fa fa-2x fa-facebook"></i>
-					    <i class="fa fa-2x fa-twitter"></i>
-					    <i class="fa fa-2x fa-linkedin"></i>
-					    </div>
-					</div>
-					<div class="col-md-3 col-sm-6 member">
-						<img class="blog-image" src="images/team3.jpg" width="100%" height="280" alt="Blog Image 2"/>
-					    <p class="name-member">Jon Doe, Chief Developer</p>
-					    <ul class="team-ist">
-					     <li>CSS3 </li>	
-					     <li>HTML5 </li>
-					     <li>Adobe</li>	
-					     </ul>
-					    <div class="team-social">
-					    <i class="fa fa-2x fa-tumblr-square"></i>
-					    <i class="fa fa-2x fa-facebook"></i>
-					    <i class="fa fa-2x fa-twitter"></i>
-					    <i class="fa fa-2x fa-linkedin"></i>
-					    </div>
-					</div>
-					<div class="col-md-3 col-sm-6 member">
-						<img class="blog-image" src="images/team4.jpg" width="100%" height="280" alt="Blog Image 2"/>
-						<p class="name-member">Jon Doe, Event Manager</p>
-					    <ul class="team-ist">
-					     <li>CSS3 </li>	
-					     <li>HTML5 </li>
-					     <li>Adobe</li>	
-					     </ul>
-					    <div class="team-social">
-					    <i class="fa fa-2x fa-tumblr-square"></i>
-					    <i class="fa fa-2x fa-facebook"></i>
-					    <i class="fa fa-2x fa-twitter"></i>
-					    <i class="fa fa-2x fa-linkedin"></i>
-					    </div>
-					</div>
-					</div>
+                <div class="row">
+                        <div class="col-md-3 col-sm-6 member mb-5 text-center d-flex justify-content-center align-items-center">
+                            <img class="blog-image" src="images/Anny.png" width="100%" height="280" alt="Blog Image 2" />
+                            <div>
+                                <p class="name-member">IRAKOZE Anny Christel</p>
+                                <ul class="team-ist">
+                                    <li>CSS3 </li>
+                                    <li>HTML5 </li>
+                                    <li>Adobe</li>
+                                </ul>
+                                <div class="team-social">
+                                    <i class="fa fa-2x fa-tumblr-square"></i>
+                                    <i class="fa fa-2x fa-facebook"></i>
+                                    <i class="fa fa-2x fa-twitter"></i>
+                                    <i class="fa fa-2x fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 member mb-5 text-center d-flex justify-content-center align-items-center">
+                            <img class="blog-image" src="images/nick.png" width="100%" height="280" alt="Blog Image 2" />
+                            <div>
+                                <p class="name-member">GASHUMBA Nicolas</p>
+                                <ul class="team-ist">
+                                    <li>CSS3 </li>
+                                    <li>HTML5 </li>
+                                    <li>Adobe</li>
+                                </ul>
+                                <div class="team-social">
+                                    <i class="fa fa-2x fa-tumblr-square"></i>
+                                    <i class="fa fa-2x fa-facebook"></i>
+                                    <i class="fa fa-2x fa-twitter"></i>
+                                    <i class="fa fa-2x fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
 
 				</section>
-				</div></div>
 				<!--==========-->
 				<!--==========-->
 				<!--===============================-->
@@ -626,7 +530,7 @@
                         <div class="testimonila-block">
                             <img src="images/testimonial.jpg" alt="clients" class="selfshot">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam aut voluptate nobis dolor at soluta.</p>
-                            <strong>Monir Hossain</strong>
+                            <strong>AAAAAA</strong>
                             <br>
                             <small>C.E.O</small>
                         </div>
@@ -665,12 +569,13 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="moreDetails">
-                                <h2 class="con-title">More About me</h2>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi repudiandae nihil aspernatur repellat temporibus doloremque sint ea laboriosam, excepturi iure inventore rerum voluptatibus, suscipit totam, sit necessitatibus. Rerum, blanditiis. </p>
+                                <h2 class="con-title">More About us</h2>
+                                <p>Passionate about seamless experiences, we, a dynamic duo of learners, embarked on a journey to simplify event attendance. Our project, Online Ticket Booking, is born from a shared vision to enhance accessibility and joy in every reservation. 
+                                    Join us in transforming events into unforgettable moments, one ticket at a time. </p>
                                 <ul class="address">
                                     <li><i class="pe-7s-map-marker"></i><span>1600 Pennsylvania Ave NW,<br>Washington, DC 20500,<br>United States</span></li>
-                                    <li><i class="pe-7s-mail"></i><span>example@gmail.com</span></li>
-                                    <li><i class="pe-7s-phone"></i><span>+1-202-555-0144</span></li>
+                                    <li><i class="pe-7s-mail"></i><span>ennynick@gmail.com</span></li>
+                                    <li><i class="pe-7s-phone"></i><span>+250 786 265 888</span></li>
                                     <li><i class="pe-7s-global"></i><span><a href="#">www.themewagon.com</a></span></li>
                                 </ul>
                             </div>
@@ -715,10 +620,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2014 <a href="http://wwww.technextit.com" target="_blank">Technext</a></p>
+                        <p class="copyright">© Copyright 2023 <a href="#">AnnyNick</a></p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="designed">Designed and Developed by <a href="http://themewagon.com" target="_blank">Themewagon</a></p>
+                        <p class="designed">Designed and Developed by <a href="#">AnnyNick</a></p>
                     </div>
                 </div>
             </div>
@@ -740,7 +645,6 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
 		<script type="text/javascript"> 
-
 		$(document).ready(function() {
  
 		  $("#testimonial-container").owlCarousel({
