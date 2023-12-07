@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'signup')
+@section('title', 'login')
 @section('content')
     <body style="background-image: url('images/background.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.9;">
         <div class="container">

@@ -11,13 +11,13 @@
             <a class="nav-link" href="{{route('about')}}">About</a>
           </li>
           <li class="nav-item"> 
-            <a class="nav-link" href="{{route()}}">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Signin</a>
+            <a class="nav-link" href="{{route('login')}}">Signin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Signup</a>
+            <a class="nav-link" href="{{route('signup')}}">Signup</a>
           </li>
         </ul>
         <div>
