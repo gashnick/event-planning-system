@@ -13,7 +13,7 @@
 <body>
 	<div class="grid-container">
 		<!-- Header --->
-		<Header class="header"></Header>
+		<Header class="header">
 		  <div class="menu-icon" onclick="openSideBar()">
 		  <span class="material-icons-outlined">menu</span>
 		  </div>
@@ -25,10 +25,41 @@
 			<span class="material-icons-outlined">email</span>
 			<span class="material-icons-outlined">account_circle</span>
 		  </div>
+		  </Header>
 		<!-- End Header --->
 
 		<!-- Sidebar--->
-		<aside id="sidebar"></aside>
+		<aside id="sidebar">
+			<div class="sidebar-title">
+				<div class="sidebar-brand">
+				<span class="material-icons-outlined">event</span>
+				</div>
+				<span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+			</div>
+			<ul class="sidebar-list">
+				<li class="sidebar-list-item">
+				<span class="material-icons-outlined">dashboard</span>
+				</li>
+				<li class="sidebar-list-item">
+				<span class="material-icons-outlined">Events</span>
+				</li>
+				<li class="sidebar-list-item">
+				<span class="material-icons-outlined">Tickets</span>
+				</li>
+				<li class="sidebar-list-item">
+				<span class="material-icons-outlined">payment</span>
+				</li>
+				<li class="sidebar-list-item">
+				<span class="material-icons-outlined">Manage Accounts</span>
+				</li>
+				<li class="sidebar-list-item">
+				<span class="material-icons-outlined">Change Password</span>
+				</li>
+				<li class="sidebar-list-item">
+				<span class="material-icons-outlined">logout</span>
+				</li>
+			</ul>
+		</aside>
 		<!-- End Sidebar--->
 
 
