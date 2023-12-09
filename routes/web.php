@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthManager;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,13 @@ Route::get('/about', function () {
 })->name('about');
 
 
-
+Route::get('/show', [UserController::class, 'showUsers'])->name('show');
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
 Route::post('/login', [AuthManager::class, 'loginPost'])->name('login_post');
 Route::get('/signup', [AuthManager::class, 'signup'])->name('signup');
 Route::post('/signup', [AuthManager::class, 'signupPost'])->name('signup_post');
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
+Route::get('/users/create', [UserController::class, 'create'])->name('create');
+Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('edit');
+Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('delete');
 

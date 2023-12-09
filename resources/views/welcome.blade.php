@@ -32,31 +32,32 @@
 		<aside id="sidebar">
 			<div class="sidebar-title">
 				<div class="sidebar-brand">
-				<span class="material-icons-outlined">event</span>
+				<span class="material-icons-outlined">event</span> Online Ticket Booking
 				</div>
 				<span class="material-icons-outlined" onclick="closeSidebar()">close</span>
 			</div>
 			<ul class="sidebar-list">
 				<li class="sidebar-list-item">
-				<span class="material-icons-outlined">dashboard</span>
+				<span class="material-icons-outlined">dashboard</span> Dashboard
 				</li>
 				<li class="sidebar-list-item">
-				<span class="material-icons-outlined">Events</span>
+				<span class="material-icons-outlined">event</span> Events
 				</li>
 				<li class="sidebar-list-item">
-				<span class="material-icons-outlined">Tickets</span>
+				<span class="material-icons-outlined">book_online</span> Tickets
 				</li>
 				<li class="sidebar-list-item">
-				<span class="material-icons-outlined">payment</span>
+				<span class="material-icons-outlined">payment</span> Payments
 				</li>
 				<li class="sidebar-list-item">
-				<span class="material-icons-outlined">Manage Accounts</span>
+					<a href="{{ route('show') }}" class="sidebar-link">
+						 <span class="material-icons-outlined">manage_accounts</span> Manage Accounts</a>
 				</li>
 				<li class="sidebar-list-item">
-				<span class="material-icons-outlined">Change Password</span>
+				<span class="material-icons-outlined">lock_reset</span> Reset password
 				</li>
 				<li class="sidebar-list-item">
-				<span class="material-icons-outlined">logout</span>
+				<span class="material-icons-outlined">logout</span> Logout
 				</li>
 			</ul>
 		</aside>
@@ -64,7 +65,11 @@
 
 
 		<!-- Main--->
-		<main class="main-container"></main>
+		<main class="main-container">
+			<div class="main-title">
+				<h2>DASBOARD</h2>
+			</div>
+		</main>
 		<!-- End Main--->
 	</div>
 	<script src="{{URL::asset('js/welcome.js')}}"></script>
