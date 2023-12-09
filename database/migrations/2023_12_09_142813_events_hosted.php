@@ -20,8 +20,8 @@ return new class extends Migration
             $table->date('date');
             $table->integer('no_of_tickets');
             $table->float('price');
-            // Add more columns as needed
-            $table->timestamps(); // Adds 'created_at' and 'updated_at' columns
+            $table->string('description');
+            $table->timestamps();
         });
 
     }

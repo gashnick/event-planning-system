@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -34,3 +35,12 @@ Route::post('/users/create', [UserController::class, 'store'])->name('store');
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('edit');
 Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('delete');
 
+// routes for events
+
+Route::get('/events', [EventsController::class, 'showEvents'])->name('show');
+Route::get('/events/create', [EventsController::class, 'createEvent'])->name('create');
+Route::post('/events', [EventsController::class, 'storeEvents'])->name('store');
+Route::get('/events/{id}', [EventsController::class, 'showEvents'])->name('show');
+Route::get('/events/{id}/edit', [EventsController::class, 'editEvents'])->name('edit');
+Route::post('/events/{id}', [EventsController::class, 'updateEvents'])->name('update');
+Route::delete('/events/{id}', [EventsController::class, 'destroyEvents'])->name('destroy');
