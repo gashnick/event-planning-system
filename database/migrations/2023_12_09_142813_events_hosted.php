@@ -14,15 +14,16 @@ return new class extends Migration
     public function up()
     {
         Schema::create('events_hosted', function (Blueprint $table) {
-            $table->id();
-            $table->string('event_name')->default('');
-            $table->integer('no-of_tickets')->change();
-            $table->string('venue')->unique();
-            $table->float('price')->change();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+            $table->id(); // Auto-incremental primary key
+            $table->string('event_name');
+            $table->string('venue');
+            $table->date('date');
+            $table->integer('no_of_tickets');
+            $table->float('price');
+            // Add more columns as needed
+            $table->timestamps(); // Adds 'created_at' and 'updated_at' columns
         });
+
     }
 
     /**

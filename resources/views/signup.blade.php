@@ -14,19 +14,19 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label class="form-label mb-3">First name</label>
-                            <input type="text" class="form-control mb-3" name="firstName">
+                            <input type="text" class="form-control mb-3" name="firstName" required>
                         </div>
                         <div class="col-md-6">
                             <label class="form-label mb-3">Last name</label>
-                            <input type="text" class="form-control mb-2" name="lastName">
+                            <input type="text" class="form-control mb-2" name="lastName" required>
                         </div>
                     </div>
                     <label class="form-label">Email address</label>
-                    <input type="email" class="form-control" name="email">
+                    <input type="email" class="form-control" name="email" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" name="password">
+                    <input type="password" class="form-control" name="password" required>
                     <label class="form-label">Confirm Password</label>
                     <input type="password" class="form-control" name="confirmPassword">
                 </div>

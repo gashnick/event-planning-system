@@ -30,6 +30,7 @@ Route::get('/signup', [AuthManager::class, 'signup'])->name('signup');
 Route::post('/signup', [AuthManager::class, 'signupPost'])->name('signup_post');
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 Route::get('/users/create', [UserController::class, 'create'])->name('create');
+Route::post('/users/create', [UserController::class, 'store'])->name('store');
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('edit');
 Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('delete');
 
