@@ -42,5 +42,5 @@ Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('delete')
 Route::get('/show', [EventsController::class, 'showEvent'])->name('event.show');
 Route::get('/event/create', [EventsController::class, 'createEvent'])->name('events.create');
 Route::post('/event/create', [EventsController::class, 'storeEvent'])->name('events.store');
-Route::get('/event/{id}/edit', [EventsController::class, 'editEvent'])->name('event.edit');
+//Route::get('/event/{id}/edit', [EventsController::class, 'editEvent'])->name('event.edit');
 Route::delete('/event/{id}', [EventsController::class, 'deleteEvent'])->name('events.destroy');
