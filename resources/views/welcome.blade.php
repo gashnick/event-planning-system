@@ -50,9 +50,9 @@
 				<span class="material-icons-outlined">payment</span> Payments
 				</li>
 				<li class="sidebar-list-item">
-					<a href="{{ route('show') }}" class="sidebar-link">
-						 <span class="material-icons-outlined">manage_accounts</span> Manage Accounts</a>
-				</li>
+				<a href="{{ route('show', ['id' => 1]) }}" class="sidebar-link">
+					<span class="material-icons-outlined">manage_accounts</span> Manage Accounts</a>
+                 </li>
 				<li class="sidebar-list-item">
 				<span class="material-icons-outlined">lock_reset</span> Reset password
 				</li>

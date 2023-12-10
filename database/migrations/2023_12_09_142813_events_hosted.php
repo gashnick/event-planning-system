@@ -20,7 +20,7 @@ return new class extends Migration
             $table->date('date');
             $table->integer('no_of_tickets');
             $table->float('price');
-            $table->string('description');
+            //$table->text('description')->nullable()->change();
             $table->timestamps();
         });
 
@@ -33,6 +33,9 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('event_hosted', function (Blueprint $table) {
+            $table->text('description')->change();
+        });
+        Schema::dropIfExists('events_hosted');
     }
 };

@@ -18,7 +18,7 @@ class EventHosted extends Model
         'date',
         'no_of_tickets',
         'price',
-        'description'
+        'description',
         // Add more fields as needed
     ];
 

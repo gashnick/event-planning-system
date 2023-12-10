@@ -15,7 +15,7 @@ public function create()
     return view('users.create');
 }
 
-public function store(Request $request)
+public function storeUser(Request $request)
 {
     // Validate and store the new user
 

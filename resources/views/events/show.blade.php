@@ -11,7 +11,7 @@
 <div class="container mt-5">
     <h1>Manage Events</h1>
     <div style="text-align: right;">
-        <a href="{{ route('create') }}" class="btn btn-success">Create New Event</a>
+        <a href="{{ route('events.create') }}" class="btn btn-success">Create New Event</a>
     </div>
     <table class="table caption-top">
         <caption>List of events</caption>
