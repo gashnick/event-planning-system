@@ -33,15 +33,14 @@ Route::post('/signup', [AuthManager::class, 'signupPost'])->name('signup_post');
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 
 // User controller
-
 Route::get('/users/create', [UserController::class, 'create'])->name('create');
 Route::post('/users/create', [UserController::class, 'storeUser'])->name('store');
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('edit');
 Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('delete');
 
 // routes for events
-
-Route::get('/events/create', [EventsController::class, 'createEvent'])->name('events.create');
-Route::post('/events/create', [EventsController::class, 'storeEvent'])->name('events.store');
-Route::get('/events/{id}/edit', [EventsController::class, 'editEvent'])->name('events.edit');
-Route::delete('/events/{id}', [EventsController::class, 'deleteEvent'])->name('events.delete');
+Route::get('/show', [EventsController::class, 'showEvent'])->name('event.show');
+Route::get('/event/create', [EventsController::class, 'createEvent'])->name('events.create');
+Route::post('/event/create', [EventsController::class, 'storeEvent'])->name('events.store');
+Route::get('/event/{id}/edit', [EventsController::class, 'editEvent'])->name('event.edit');
+Route::delete('/event/{id}', [EventsController::class, 'deleteEvent'])->name('events.destroy');

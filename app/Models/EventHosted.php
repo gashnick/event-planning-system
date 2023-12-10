@@ -9,9 +9,8 @@ use Laravel\Sanctum\HasApiTokens;
 
 class EventHosted extends Model
 {
-    use HasFactory, Notifiable, HasApiTokens;
-    protected $table = "events_hosted";
-
+    use HasApiTokens, HasFactory, Notifiable;
+    protected $table = "event_hosteds";
     protected $fillable = [
         'event_name',
         'venue',
@@ -19,8 +18,5 @@ class EventHosted extends Model
         'no_of_tickets',
         'price',
         'description',
-        // Add more fields as needed
     ];
-
-    // Add any relationships or additional methods here
 }

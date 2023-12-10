@@ -13,17 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('events_hosted', function (Blueprint $table) {
-            $table->id(); // Auto-incremental primary key
+        Schema::create('event_hosteds', function (Blueprint $table) {
+            $table->id();
             $table->string('event_name');
             $table->string('venue');
             $table->date('date');
             $table->integer('no_of_tickets');
-            $table->float('price');
-            //$table->text('description')->nullable()->change();
+            $table->decimal('price', 10, 2)->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
-
     }
 
     /**
@@ -33,9 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('event_hosted', function (Blueprint $table) {
-            $table->text('description')->change();
-        });
-        Schema::dropIfExists('events_hosted');
+        Schema::dropIfExists('event_hosteds');
     }
 };

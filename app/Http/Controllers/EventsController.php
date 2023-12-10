@@ -4,66 +4,73 @@ namespace App\Http\Controllers;
 
 use App\Models\EventHosted;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class EventsController extends Controller
 {
     public function createEvent()
     {
-        return view('events.create'); // Assuming your view file is named 'create.blade.php'
+        // Your code to show the form for creating events
+        return view('event.create');
     }
-
     public function storeEvent(Request $request)
-    {
-        // Validate and store the new event
+{
+    // Validate the request data
+    $request->validate([
+        'eventName' => 'required',
+        'venue' => 'required',
+        'date' => 'required|date',
+        'ticket' => 'required|numeric',
+        'price' => 'nullable|numeric',
+        'description' => 'nullable',
+    ]);
 
-        $request->validate([
-            'eventName' => 'required',
-            'eventVenue' => 'required',
-            'date' => 'required|date',
-            'tickets' => 'required|numeric',
-            'price' => 'numeric',
-            'description' => 'nullable',
-        ]);
-
-        // Create a new event
+    try {
+        // Create and store the new event in the database
         EventHosted::create([
             'event_name' => $request->input('eventName'),
-            'event_venue' => $request->input('eventVenue'),
+            'venue' => $request->input('venue'),
             'date' => $request->input('date'),
-            'number_of_tickets' => $request->input('tickets'),
-            'price_per_ticket' => $request->input('price'),
+            'no_of_tickets' => $request->input('ticket'),
+            'price' => $request->input('price'),
             'description' => $request->input('description'),
-            // Add other fields as needed
         ]);
 
-        // Redirect to the route that displays the list of events
-        return redirect()->route('events.show')->with('success', 'Event created successfully');
-    }
+        return redirect()->route('event.show')->with('success', 'Event created successfully.');
+    } catch (\Exception $e) {
+        Log::error('Error creating event: ' . $e->getMessage());
 
+        // Redirect back with an error message
+        return back()->with('error', 'Error creating event');
+    }
+}
 
     public function editEvent($id)
     {
+        // Fetch event by ID and show the edit form
         $event = EventHosted::find($id);
 
-        // Add any additional logic you need
-
-        return view('events.edit', ['event' => $event]);
+        return view('event.edit', compact('event'));
     }
 
     public function deleteEvent($id)
     {
+        // Find the event by ID and delete it
         $event = EventHosted::find($id);
-
-        // Perform any additional checks or logic before deleting, if needed
+        
+        if (!$event) {
+            return redirect()->route('event.show')->with('error', 'Event not found.');
+        }
 
         $event->delete();
 
-        // Redirect to the events listing or show page
-        return redirect()->route('events.show')->with('success', 'Event deleted successfully!');
+        // Redirect to the show events page 
+        return redirect()->route('event.show')->with('success', 'Event deleted successfully');
     }
 
-    public function showEvents() {
+    public function showEvent() {
         $events = EventHosted::all();
-        return view('events.show', compact('events'));
+        return view('event.show', compact('events'));
     }
+
 }
