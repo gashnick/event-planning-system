@@ -50,7 +50,7 @@
 				<span class="material-icons-outlined">payment</span> Payments
 				</li>
 				<li class="sidebar-list-item">
-				<a href="{{ route('show', ['id' => 1]) }}" class="sidebar-link">
+				<a href="/" class="sidebar-link">
 					<span class="material-icons-outlined">manage_accounts</span> Manage Accounts</a>
                  </li>
 				<li class="sidebar-list-item">

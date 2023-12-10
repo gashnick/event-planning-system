@@ -25,7 +25,6 @@ Route::get('/about', function () {
 
 // rotes for Auth manager
 
-Route::get('/show', [UserController::class, 'showUsers'])->name('show');
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
 Route::post('/login', [AuthManager::class, 'loginPost'])->name('login_post');
 Route::get('/signup', [AuthManager::class, 'signup'])->name('signup');
@@ -33,6 +32,7 @@ Route::post('/signup', [AuthManager::class, 'signupPost'])->name('signup_post');
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 
 // User controller
+Route::get('/users', [UserController::class, 'showUsers'])->name('show');
 Route::get('/users/create', [UserController::class, 'create'])->name('create');
 Route::post('/users/create', [UserController::class, 'storeUser'])->name('store');
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('edit');
