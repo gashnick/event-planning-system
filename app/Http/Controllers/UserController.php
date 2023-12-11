@@ -44,7 +44,7 @@ public function storeUser(Request $request)
     {
         // Fetch user by ID and show the edit form
         $user = User::find($id);
-        return view('users.edit', compact('user'));
+        return view('edit', compact('user'));
     }
 
     public function destroy($id)

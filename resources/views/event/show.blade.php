@@ -39,10 +39,10 @@
                     <td>{{ $event->description }}</td>
                     <td>
                         <!-- Edit button -->
-                        <a href="{{ route('edit', ['id' => $event->id]) }}" class="btn btn-primary">Edit</a>
+                        <a href="{{ route('event.edit', ['id' => $event->id]) }}" class="btn btn-primary">Edit</a>
                         
                         <!-- Delete button (you may want to add a confirmation dialog for delete) -->
-                        <form action="{{ route('delete', ['id' => $event->id]) }}" method="post" style="display: inline;">
+                        <form action="{{ route('events.destroy', ['id' => $event->id]) }}" method="post" style="display: inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>

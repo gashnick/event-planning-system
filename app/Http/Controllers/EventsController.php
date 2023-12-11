@@ -57,11 +57,6 @@ class EventsController extends Controller
     {
         // Find the event by ID and delete it
         $event = EventHosted::find($id);
-        
-        if (!$event) {
-            return redirect()->route('event.show')->with('error', 'Event not found.');
-        }
-
         $event->delete();
 
         // Redirect to the show events page 
