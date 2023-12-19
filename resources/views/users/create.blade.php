@@ -27,8 +27,6 @@
                 <div class="mb-3">
                     <label class="form-label">Password</label>
                     <input type="password" class="form-control" name="password" required>
-                    <label class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" name="confirmPassword">
                 </div>
                 <button type="submit" class="btn btn-primary">Create User</button>
             </form>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
@@ -16,9 +17,6 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
 Route::get('/about', function () {
     return view('about');
 })->name('about');
@@ -42,5 +40,10 @@ Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('delete')
 Route::get('/show', [EventsController::class, 'showEvent'])->name('event.show');
 Route::get('/event/create', [EventsController::class, 'createEvent'])->name('events.create');
 Route::post('/event/create', [EventsController::class, 'storeEvent'])->name('events.store');
-Route::get('/event/{id}/edit', [EventsController::class, 'editEvent'])->name('event.edit');
+Route::get('event/edit/{id}', 'EventsController@editEvent')->name('event.edit');
+Route::put('update-data/{id}', 'EventsController@update');
 Route::delete('/event/{id}', [EventsController::class, 'deleteEvent'])->name('events.destroy');
+
+// admin routes
+
+Route::get('/admin/index', [AdminController::class, 'dashboard'])->name('admin.index');

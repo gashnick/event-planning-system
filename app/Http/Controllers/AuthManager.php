@@ -12,47 +12,52 @@ use Symfony\Component\HttpFoundation\Session\Session as SessionSession;
 
 class AuthManager extends Controller
 {
-    function login (){
+    function login()
+    {
         return view('login');
     }
 
-    function signup (){
+    function signup()
+    {
         return view('signup');
     }
 
-    function loginPost(Request $request){
-         $request ->validate([
+    function loginPost(Request $request)
+    {
+        $request->validate([
             'email' => 'required',
             'password' => 'required'
-         ]);
+        ]);
 
-         $credentials = $request->only('email', 'password');
-         if(Auth::attempt($credentials)){
-            return redirect()->intended(route('home'));
-         }
-         return redirect(route('login'))->with("error", "Log in detauls are not valid");
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended(route('admin.index'));
+        }
+        return redirect(route('login'))->with("error", "Log in detauls are not valid");
     }
 
-    function signupPost(Request $request){
-        $request ->validate([
+    function signupPost(Request $request)
+    {
+        $request->validate([
             'firstName' => 'required',
             'lastName' => 'required',
             'email' => 'required|email|unique:customer_details',
             'password' => 'required'
-         ]);
+        ]);
 
-         $data['First_name'] = $request->firstName;
-         $data['Last_name'] = $request->lastName;
-         $data['email'] = $request->email;
-         $data['password'] = Hash::make($request->password);
-         $user=User::create($data);
-         if(!$user){
+        $data['First_name'] = $request->firstName;
+        $data['Last_name'] = $request->lastName;
+        $data['email'] = $request->email;
+        $data['password'] = Hash::make($request->password);
+        $user = User::create($data);
+        if (!$user) {
             return redirect(route('signup'))->with("error", "enable to register");
-         }
-         return redirect(route('login'))->with("success", "Registration successfully, Log in your account");
+        }
+        return redirect(route('login'))->with("success", "Registration successfully, Log in your account");
     }
 
-    function logout(){
+    function logout()
+    {
         Session::flush();
         Auth::logout();
         return redirect(route('login'));

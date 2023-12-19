@@ -9,6 +9,7 @@
                 @endif
             </div>
             <form action="{{ route('edit', ['id' => $user->id])  }}" method="POST" class="ms-auto me-auto mt-auto" style="width: 500px; background-color: white; padding: 20px; border-radius: 10px;">
+                @method('PUT')
                 @csrf
                 <div class="mb-3">
                     <div class="row">

@@ -18,5 +18,8 @@ class EventHosted extends Model
         'no_of_tickets',
         'price',
         'description',
+        'start_time',
+        'end_time',
+        'status',
     ];
 }

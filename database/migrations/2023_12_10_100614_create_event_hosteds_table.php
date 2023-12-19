@@ -21,6 +21,9 @@ return new class extends Migration
             $table->integer('no_of_tickets');
             $table->decimal('price', 10, 2)->nullable();
             $table->text('description')->nullable();
+            $table->timestamp('start_time')->nullable();
+            $table->timestamp('end_time')->nullable();
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }
